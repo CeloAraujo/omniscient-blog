@@ -30,6 +30,7 @@
   max-width: 60px;
   text-align: center;
   cursor: pointer;
+  transition:.3s
 }
 
 .btn:hover {
