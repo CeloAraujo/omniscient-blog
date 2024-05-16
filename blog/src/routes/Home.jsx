@@ -23,8 +23,8 @@ const Home = () => {
     getPosts();
   }, []);
 
-  return <div>
-    <h1>Útilmos posts</h1>
+  return <div className="home">
+    <h1>Últimos posts</h1>
     {posts.length === 0 ? <p>Carregando...</p> : (posts.map((post)=>(
       <div className="post" key={post.id}>
         <h2>{post.title}</h2>
