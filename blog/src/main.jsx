@@ -18,7 +18,7 @@ const router = createBrowserRouter([
     element: <App />,
     children: [
       {
-        path: "/omniscient-blog",
+        path: "/omniscient-blog/",
         element: <Home />,
       },
       {
