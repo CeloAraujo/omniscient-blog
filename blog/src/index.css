@@ -19,15 +19,14 @@ a {
   transition: 0.4s;
   opacity: 0.6;
 }
-a:hover {
+a:hover{
   opacity: 1;
-  font-size: 1.1rem;
 }
 
- h2 a:hover{
-  font-size:1.6rem;
+h2 a:hover {
+  font-size: 1.6rem;
 }
 
-p{
+p {
   color: #a9abb3;
 }
