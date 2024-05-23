@@ -15,6 +15,7 @@ import EdittPost from "./routes/EdittPost.jsx";
 
 const router = createBrowserRouter([
   {
+    path:"/omniscient-blog/",
     element: <App />,
     children: [
       {
