@@ -32,7 +32,7 @@ const NewPost = () => {
 
     try {
       await blogFetch.put(`/posts/${id}`, post);
-      navigate("/");
+      navigate("/omniscient-blog/");
     } catch (error) {
       console.log('Erro ao atualizar o post:', error);
     }
