@@ -1,6 +1,6 @@
 import blogFetch from "../axios/config";
 
-import { useState, useEffect } from "react";
+import { useState, useEffect, useCallback } from "react";
 
 import { useParams } from "react-router-dom";
 
@@ -12,20 +12,19 @@ const Post = () => {
   const { id } = useParams();
 
   // eslint-disable-next-line react-hooks/exhaustive-deps
-  const getPost = async () => {
+  const getPost = useCallback(async () => {
     try {
       const response = await blogFetch.get(`/posts/${id}`);
-
       const data = response.data;
-
       setPost(data);
     } catch (error) {
       console.log(error);
     }
-  };
+  }, [id]);
 
   useEffect(() => {
     getPost();
+  // eslint-disable-next-line react-hooks/exhaustive-deps
   }, [getPost]);
 
   return (
