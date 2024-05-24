@@ -12,10 +12,9 @@ import Post from "./routes/Post.jsx";
 import Admin from "./routes/Admin.jsx";
 import EdittPost from "./routes/EdittPost.jsx";
 
-
 const router = createBrowserRouter([
   {
-    path:"/omniscient-blog/",
+    path: "/omniscient-blog/",
     element: <App />,
     children: [
       {

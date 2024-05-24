@@ -17,7 +17,7 @@ const NewPost = () => {
     await blogFetch.post("/posts", {
       body: post,
     });
-    navigate("/");
+    navigate("/omniscient-blog/");
   };
 
   return (
