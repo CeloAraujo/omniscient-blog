@@ -19,23 +19,23 @@ const router = createBrowserRouter([
     element: <App />,
     children: [
       {
-        path: "/omniscient-blog/",
+        path: "/",
         element: <Home />,
       },
       {
-        path: "/omniscient-blog/new",
+        path: "/new",
         element: <NewPost />,
       },
       {
-        path: "/omniscient-blog/posts/:id",
+        path: "/posts/:id",
         element: <Post />,
       },
       {
-        path: "/omniscient-blog/admin",
+        path: "/admin",
         element: <Admin />,
       },
       {
-        path: "/omniscient-blog/posts/edit/:id",
+        path: "/posts/edit/:id",
         element: <EdittPost />,
       },
     ],
